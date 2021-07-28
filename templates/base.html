@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Bible app</title>
+    </head>
+    <body>
+        <header>
+            <h1><a href="{% url 'home' %}">Bible app</a></h1>
+        </header>
+        <div>
+            {% block content %} 
+            {% endblock content %}
+        </div>
+    </body>
+</html>

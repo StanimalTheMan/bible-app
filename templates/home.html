@@ -1,0 +1,10 @@
+{% extends 'base.html' %} 
+
+{% block content %} 
+    {% for verse in object_list %} 
+        <div class="verse-entry">
+            <h2><a href="">{{ verse.book }} {{ verse.chapter }}:{{ verse.verse }} ({{ verse.version }})</a></h2>
+            <p>{{ verse.content }}</p>
+        </div>
+    {% endfor %} 
+{% endblock content %}
